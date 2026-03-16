@@ -7,6 +7,6 @@ y = np.array([0,0,0,1,1,1])
 model = DecisionTreeClassifier(random_state=32)
 model.fit(x,y)
 
-new_stud = [[4,65]]
+new_stud = [[5,85]]
 prediction = model.predict(new_stud)
-print(f"Prediction for the new student is: {prediction}")
+print(f"Prediction for the new student is: {'Pass' if prediction[0] == 1 else 'Fail'}")
